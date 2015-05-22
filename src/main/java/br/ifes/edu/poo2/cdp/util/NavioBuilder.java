@@ -3,18 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.ifes.edu.poo2.cdp;
+package br.ifes.edu.poo2.cdp.util;
+
+import br.ifes.edu.poo2.cdp.Navio;
 
 /**
  *
  * @author Jordan-Not
  */
-public interface Navio extends Cloneable{    
+public abstract class NavioBuilder {
     
-    public int getCarga();
-    public int getPassageiro();
-    public void setCarga();
-    public void setPassageiro();
+    public void setCarga() {}
+    public void setPassageiro() {}
     
-    public Object clone();    
+    public abstract Navio getNavio();
+    
 }

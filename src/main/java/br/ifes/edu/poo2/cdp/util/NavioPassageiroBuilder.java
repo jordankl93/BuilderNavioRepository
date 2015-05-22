@@ -1,0 +1,35 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package br.ifes.edu.poo2.cdp.util;
+
+import br.ifes.edu.poo2.cdp.Navio;
+
+/**
+ *
+ * @author Jordan-Not
+ */
+public class NavioPassageiroBuilder extends NavioBuilder{
+    private Navio navioPassageiro;
+
+    public NavioPassageiroBuilder(Navio navioPassageiro) {
+        this.navioPassageiro = navioPassageiro;
+    }
+    
+    @Override
+    public void setCarga(){
+        navioPassageiro.setCarga();
+    }
+    
+    @Override
+    public void setPassageiro(){
+        navioPassageiro.setPassageiro();
+    }
+
+    @Override
+    public Navio getNavio() {
+        return navioPassageiro;
+    }
+}

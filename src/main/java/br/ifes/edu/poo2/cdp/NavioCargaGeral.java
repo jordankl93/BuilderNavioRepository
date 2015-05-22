@@ -12,8 +12,6 @@ package br.ifes.edu.poo2.cdp;
 public class NavioCargaGeral extends AbstractNavio{
 
     public NavioCargaGeral() {
-        capacidadeCarga = random.nextInt(150);
-        capacidadePessoa = random.nextInt(12);
     }
 
     @Override
@@ -24,6 +22,16 @@ public class NavioCargaGeral extends AbstractNavio{
     @Override
     public int getPassageiro() {
         return capacidadePessoa;
+    }
+
+    @Override
+    public void setCarga() {
+        capacidadeCarga = random.nextInt(150);
+    }
+
+    @Override
+    public void setPassageiro() {
+        capacidadePessoa = random.nextInt(12);
     }
     
 }

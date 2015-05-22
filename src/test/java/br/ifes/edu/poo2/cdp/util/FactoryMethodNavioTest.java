@@ -3,8 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.ifes.edu.poo2.cdp;
+package br.ifes.edu.poo2.cdp.util;
 
+import br.ifes.edu.poo2.cdp.Navio;
+import br.ifes.edu.poo2.cdp.NavioCargaGeral;
+import br.ifes.edu.poo2.cdp.NavioEscuna;
+import br.ifes.edu.poo2.cdp.NavioGraneleiro;
+import br.ifes.edu.poo2.cdp.util.FactoryCruzeiro;
+import br.ifes.edu.poo2.cdp.util.FactoryMethodNavio;
+import br.ifes.edu.poo2.cdp.util.TipoNavio;
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;

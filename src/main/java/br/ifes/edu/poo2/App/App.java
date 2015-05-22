@@ -5,9 +5,9 @@
  */
 package br.ifes.edu.poo2.App;
 
-import br.ifes.edu.poo2.cdp.FactoryMethodNavio;
+import br.ifes.edu.poo2.cdp.util.FactoryMethodNavio;
 import br.ifes.edu.poo2.cdp.Navio;
-import br.ifes.edu.poo2.cdp.TipoNavio;
+import br.ifes.edu.poo2.cdp.util.TipoNavio;
 
 /**
  *

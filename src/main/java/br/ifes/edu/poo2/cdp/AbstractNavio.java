@@ -14,18 +14,8 @@ import java.util.Random;
 public abstract class AbstractNavio implements Navio{
     protected int capacidadePessoa;
     protected int capacidadeCarga;
-    protected Random random;
-
-    public AbstractNavio() {
-        random = new Random();
-    }   
-    
-    @Override
-    public abstract int getCarga();
-    
-    @Override
-    public abstract int getPassageiro();
-    
+    protected  static Random random = new Random();
+        
     @Override
     public Object clone(){
         Object obj = null;

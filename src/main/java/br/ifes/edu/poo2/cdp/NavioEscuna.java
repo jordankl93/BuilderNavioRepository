@@ -12,8 +12,6 @@ package br.ifes.edu.poo2.cdp;
 public class NavioEscuna extends AbstractNavio{
 
     public NavioEscuna() {
-        capacidadeCarga = 0;
-        capacidadePessoa = random.nextInt(20);
     }
     
     @Override
@@ -24,6 +22,16 @@ public class NavioEscuna extends AbstractNavio{
     @Override
     public int getPassageiro() {
         return capacidadePessoa;
+    }
+    
+    @Override
+    public void setCarga() {
+        capacidadeCarga = 0;
+    }
+
+    @Override
+    public void setPassageiro() {
+        capacidadePessoa = random.nextInt(20);
     }
     
 }
