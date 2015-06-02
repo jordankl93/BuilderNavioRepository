@@ -5,16 +5,22 @@
  */
 package br.ifes.edu.poo2.cdp;
 
+import br.ifes.edu.poo2.cdp.util.TipoNavio;
+
 /**
  *
  * @author Jordan-Not
  */
 public interface Navio extends Cloneable{    
     
+    public long getId();
     public int getCarga();
     public int getPassageiro();
-    public void setCarga();
-    public void setPassageiro();
+    public TipoNavio getTipoNavio();
+    public void setId(long id);
+    public void setCarga(int capacidadeCarga);
+    public void setPassageiro(int capacidadePessoa);
+    public void setTipoNavio(TipoNavio tipoNavio);
     
     public Object clone();    
 }

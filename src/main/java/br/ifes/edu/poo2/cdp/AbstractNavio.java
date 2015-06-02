@@ -5,34 +5,48 @@
  */
 package br.ifes.edu.poo2.cdp;
 
+import br.ifes.edu.poo2.cdp.reuse.Model;
+import br.ifes.edu.poo2.cdp.util.TipoNavio;
 import java.util.Random;
 
 /**
  *
  * @author Jordan-Not
  */
-public abstract class AbstractNavio implements Navio{
+public abstract class AbstractNavio implements Navio {
+
+    protected long id;
     protected int capacidadePessoa;
     protected int capacidadeCarga;
-    protected  static Random random = new Random();
-        
+    protected TipoNavio tipoNavio;
+    protected static Random random = new Random();
+
     @Override
-    public Object clone(){
+    public long getId() {
+        return id;
+    }
+
+    @Override
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    @Override
+    public Object clone() {
         Object obj = null;
-        
-        try{
+
+        try {
             obj = super.clone();
-        }
-        catch(CloneNotSupportedException x){
+        } catch (CloneNotSupportedException x) {
             System.out.println(x.getMessage());
         }
-        
+
         return obj;
     }
-    
+
     @Override
-    public String toString(){
+    public String toString() {
         return "Quantidade de passageiros: " + getPassageiro() + " | Quantidade Carga: " + getCarga() + " Toneladas";
     }
-    
+
 }

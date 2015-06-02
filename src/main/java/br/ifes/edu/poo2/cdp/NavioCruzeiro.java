@@ -5,6 +5,8 @@
  */
 package br.ifes.edu.poo2.cdp;
 
+import br.ifes.edu.poo2.cdp.util.TipoNavio;
+
 /**
  *
  * @author Jordan-Not
@@ -12,6 +14,9 @@ package br.ifes.edu.poo2.cdp;
 public class NavioCruzeiro extends AbstractNavio{
 
     public NavioCruzeiro() {
+        this.tipoNavio = TipoNavio.CRUZEIRO;
+        this.capacidadeCarga = 0;
+        this.capacidadePessoa = random.nextInt(500);
     }
     
     @Override
@@ -25,13 +30,23 @@ public class NavioCruzeiro extends AbstractNavio{
     }
     
     @Override
-    public void setCarga() {
-        capacidadeCarga = 0;
+    public void setCarga(int capacidadeCarga) {
+        this.capacidadeCarga = capacidadeCarga;
     }
 
     @Override
-    public void setPassageiro() {
-        capacidadePessoa = random.nextInt(500);
+    public void setPassageiro(int capacidadePessoa) {
+        this.capacidadePessoa = capacidadePessoa;
+    }
+    
+    @Override
+    public TipoNavio getTipoNavio() {
+        return this.tipoNavio;
+    }
+    
+    @Override
+    public void setTipoNavio(TipoNavio tipoNavio) {
+        this.tipoNavio = tipoNavio;
     }
     
 }
