@@ -49,9 +49,7 @@ public class NavioCargaBuilderTest {
         Navio navioGraneleiro = new NavioGraneleiro();
         navioCargaBuilder = new NavioCargaBuilder(navioGraneleiro);
         navioCargaBuilder.setPassageiro();
-        
-        if(navioGraneleiro.getCarga() > 6)
-            fail("Erro. Quantidade de passageiros superior ao permitido");
+        Assert.assertNotNull(navioCargaBuilder.getNavio().getPassageiro());
     }
 
     /**

@@ -9,13 +9,9 @@ import br.ifes.edu.poo2.cdp.Navio;
 import br.ifes.edu.poo2.cdp.util.TipoNavio;
 import java.sql.SQLException;
 import java.util.List;
-import org.junit.After;
-import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 /**
  *
@@ -28,7 +24,7 @@ public class NavioCruzeiroDAOTest {
 	@Before
 	public void before() throws ClassNotFoundException, SQLException {
 		navioCruzeiroDAO = new NavioCruzeiroDAO();
-		criarTabelaUsuario();
+		this.criarTabelaUsuario();
 	}
 
 	 //@Test
