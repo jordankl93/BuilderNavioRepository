@@ -8,3 +8,13 @@ construção possa criar diferentes representações.  Em outras palavras, nesse
 Em nosso caso o builder foi utilizado para separar a população de um navio com suas cargas e passaegeiros. Com isso criamos dois builders, uma para os navios de carga que possuem carga e passageiros, e outro para construir navios de passageiros, esses por sua vez só levandos passageiros. Veja abaixo como ficou o diagrama de classes do projeto.
 
 ## Diagrama de Classe
+
+![Diagrama de classe](https://github.com/jordankl93/BuilderNavioRepository/blob/master/BuilderDiagramClass.jpg?raw=true)
+
+## Diagrama de caso de uso
+
+![Diagrama de caso de uso](https://github.com/jordankl93/BuilderNavioRepository/blob/master/SingletonPrototypeUseCase.jpg?raw=true)
+
+## Camada de persistência de dados (DAO)
+
+![Diagrama de caso de uso](https://github.com/jordankl93/BuilderNavioRepository/blob/master/ClassDiagramDAO.jpg?raw=true)
